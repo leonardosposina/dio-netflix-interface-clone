@@ -1,0 +1,28 @@
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 10px 0 10px 10px;
+  }
+
+  header .container {
+    background-color: black;
+    padding-right: 15px;
+  }
+
+  nav, div.user-nav {
+    display: none;
+  }
+
+  .menu-collapse {
+    display: inline;
+  }
+
+  .main-movie .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    min-width: 380px;
+  }
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --background-color: #141414;
+  --primary-text-color: white;
+  --secondary-text-color: #AAA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+.container {
+  padding: 10px 50px;
+}
+
+/* menu */
+
+header {
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0));
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-dark {
+  background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+}
+
+.menu-collapse {
+  display: none;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  height: 25px;
+  margin-top: 5px;
+}
+
+header input {
+  height: 30px;
+  width: 120px;
+  padding-left: 10px;
+  color: var(--primary-text-color);
+  background-color: rgba(0,0,0,.3);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: var(--secondary-text-color);
+}
+
+header .user-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .user-nav a {
+  margin: 5px 10px;
+}
+
+header .user-nav .user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+header .user-nav .user-avatar i {
+  margin-left: 5px;
+}
+
+/* Main movie */
+
+.main-movie {
+  height: 600px;
+  background: linear-gradient(
+    rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, .5)),
+    url('https://image.tmdb.org/t/p/original/AlqSvfI6bmxh31iaJTgjNSemF3D.jpg'
+  );
+  background-size: cover;
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-movie .container {
+  width: 70%;
+}
+
+.main-movie .title {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 3%;
+}
+
+.main-movie .description {
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+
+.main-movie-button {
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  margin: 7.5px;
+
+  cursor: pointer;
+
+  transition: .3s ease all;
+}
+
+.main-movie-button i {
+  margin-right: 8px;
+}
+
+.main-movie-button:hover, .main-movie-button:focus {
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
+}
+
+/* carousel */
+
+.movies-carousel {
+  padding-right: 0;
+}
+
+.movies-carousel h3 {
+  margin: 10px 5px;
+}
+
+.movies-carousel .carrousel-movie-thumb {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
