@@ -155,8 +155,6 @@ header .user-nav .user-avatar i {
   margin: 10px 5px;
 }
 
-.movies-carousel .carrousel-movie-thumb {
-  height: 100%;
-  width: 100%;
-  display: block;
+.movies-carousel .carousel-movie-thumb {
+  border-radius: 4px;
 }
